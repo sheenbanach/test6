@@ -1,0 +1,2 @@
+module TorikiHelper
+end
