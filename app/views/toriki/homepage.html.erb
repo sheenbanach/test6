@@ -40,16 +40,6 @@
       }
       .row.content {height:auto;} 
     }
-    .jumbotron {
-    color:white;
-    background-image: url("/images/01.jpg");
-    margin-bottom: 0;`enter code here`
-    min-height: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-    -webkit-background-size: cover;
-    background-size: cover;
-}
 
   </style>
 </head>
@@ -70,8 +60,9 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">profile</a></li>
-        <li><a href="#">Projects</a></li>
+       <%= link_to "Profile", profile_path(@profile) %>
+        <li><a href="/profile">SHEEN</a></li>
+        <li><a href="#">STUDENTS</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
