@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :books
   get 'toriki/homepage'
   get 'toriki/profile'
   get 'tuna/homepage'
