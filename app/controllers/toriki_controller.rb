@@ -3,6 +3,7 @@ class TorikiController < ApplicationController
   end
   
   def profile
+    @books=Book.all
   end
   
   def index
