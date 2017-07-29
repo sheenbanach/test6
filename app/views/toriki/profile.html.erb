@@ -9,7 +9,23 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-  
+  <h1>Listing books</h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Name</th>
+  </tr>
+ 
+  <% @books.each do |book| %>
+    <tr>
+      <td><%= book.title %></td>
+      <td><%= book.name %></td>
+      <td><%= link_to 'Show', article_path(article) %></td>
+    </tr>
+  <% end %>
+</table>
+
   <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
