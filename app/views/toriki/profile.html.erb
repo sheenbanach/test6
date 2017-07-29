@@ -12,8 +12,10 @@
   <h1>Listing books</h1>
  
   <% @books.each do |book| %>
+  <p>
   <%= book.title %></br>
       <%= book.name %>
+  </p>
   <% end %>
 
   <div class="container">
