@@ -4,4 +4,8 @@ class TorikiController < ApplicationController
   
   def profile
   end
+  
+  def index
+    @books=Book.all
+  end
 end
